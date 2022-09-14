@@ -1,12 +1,12 @@
-package PBO221;
+package PBO221.M220914;
 
 class User {
     String username;
     String password;
 
-    public User(String username, String password) {
-        this.username = username;
-        this.password = password;
+    public User(String u, String p) {
+        username = u;
+        password = p;
     }
 }
 
