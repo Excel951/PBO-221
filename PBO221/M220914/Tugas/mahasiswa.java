@@ -13,8 +13,12 @@ public class mahasiswa {
         this.prodi = prodi;
     }
 
-    public void setSPP(int spp) {
-        this.spp = spp;
+    public void setSPP() {
+        if (getAngkatan() < 17) {
+            spp = 15000000;
+        } else {
+            spp = 12000000;
+        }
     }
 
     public void setAngkatan(int angkatan) {
@@ -25,9 +29,9 @@ public class mahasiswa {
         this.semester = semester;
     }
 
-    public void setBayarSPPSemester(int bss) {
-        bayar_spp_semester = bss;
-    }
+    // public void setBayarSPPSemester(int bss) {
+    // bayar_spp_semester = bss;
+    // }
 
     // getter
     public String getNim() {
@@ -46,13 +50,13 @@ public class mahasiswa {
         return this.semester;
     }
 
-    public int getBayarSPPSemester() {
-        return this.bayar_spp_semester;
-    }
+    // public int getBayarSPPSemester() {
+    // return this.bayar_spp_semester;
+    // }
 
     // custom
     public int getSPP() {
-        spp*getSemester();
-        return this.spp;
+        bayar_spp_semester = this.spp * getSemester();
+        return this.bayar_spp_semester;
     }
 }
