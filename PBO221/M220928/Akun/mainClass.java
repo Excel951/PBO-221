@@ -44,7 +44,8 @@ public class mainClass {
                     password = rd.readLine();
 
                     // set username dan password baru
-                    akunbaru = new akun(username, password);
+                    // akunbaru = new akun(username, password);
+                    akunbaru = new akun("", password);
 
                     System.out.println("Sukses...");
                     break;

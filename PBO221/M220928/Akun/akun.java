@@ -10,8 +10,12 @@ public class akun {
     }
 
     // set akun untuk user baru
+    // public akun(String username, String password) {
+    // this.username = username;
+    // this.password = password;
+    // }
     public akun(String username, String password) {
-        this.username = username;
+        this.username = "user";
         this.password = password;
     }
 
