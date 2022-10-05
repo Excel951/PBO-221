@@ -7,9 +7,13 @@ public class mainarray {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        employee emp[] = new employee[2];
+        // employee emp[] = new employee[0];
 
         try {
+            System.out.print("Berapa data yang masuk:");
+            int jml = Integer.parseInt(reader.readLine());
+            employee emp[] = new employee[jml];
+
             for (int i = 0; i < emp.length; i++) {
                 System.out.print("Masukkan ID: ");
                 String id = reader.readLine();
