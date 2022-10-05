@@ -8,7 +8,7 @@ public class employee extends person {
     // Constructor dari super class (person)
     public employee(String id, String name, String address, String department, String title) {
         super(id, name, address);
-        this.department = department;
+        this.department = "IT";
         this.title = title;
     }
 
