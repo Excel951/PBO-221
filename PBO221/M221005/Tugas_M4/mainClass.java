@@ -23,9 +23,9 @@ public class mainClass {
                 System.out.println("\n====================================================");
                 System.out.print("\nKota Asal (Surabaya/Jakarta): ");
                 String kotaAsal = reader.readLine();
-                System.out.print("Pilih Rute Tujuan");
+                System.out.print("\nPilih Rute Tujuan");
                 if (kotaAsal.equalsIgnoreCase("Surabaya")) {
-                    System.out.println("( Bali, Lombok, Jakarta, Yogyakarta, Balikpapan, Makassar )");
+                    System.out.println(" ( Bali, Lombok, Jakarta, Yogyakarta, Balikpapan, Makassar )");
                     System.out.print("\nKota Tujuan: ");
                     String kotaTujuan = reader.readLine();
                     System.out.print("\nTanggal Berangkat: ");
@@ -37,7 +37,7 @@ public class mainClass {
                         tglKembali = reader.readLine();
                     }
 
-                    System.out.println("======== PILIH MASKAPAI ========");
+                    System.out.println("\n======== PILIH MASKAPAI ========");
                     System.out.println("1. Lion Air\n2. Citilink");
                     System.out.print("\nPilih Maskapai: ");
                     maskapai = Integer.parseInt(reader.readLine());
@@ -45,7 +45,7 @@ public class mainClass {
                         case 1:
                             LionAir lion[] = new LionAir[jmlPenumpang];
 
-                            System.out.println("======== Selamat Datang di Lion Air ========");
+                            System.out.println("\n======== Selamat Datang di Lion Air ========");
                             System.out.println("Silahkan isi data penumpang");
                             for (int i = 0; i < jmlPenumpang; i++) {
                                 System.out.print("Booking ID: ");
@@ -89,7 +89,7 @@ public class mainClass {
                         case 2:
                             Citilink citilink[] = new Citilink[jmlPenumpang];
 
-                            System.out.println("======== Selamat Datang di Citilink ========");
+                            System.out.println("\n======== Selamat Datang di Citilink ========");
                             System.out.println("Silahkan isi data penumpang");
                             for (int i = 0; i < jmlPenumpang; i++) {
                                 System.out.print("Booking ID: ");
@@ -135,7 +135,7 @@ public class mainClass {
                             break;
                     }
                 } else if (kotaAsal.equalsIgnoreCase("jakarta")) {
-                    System.out.println("( Bali, Lombok, Jakarta, Yogyakarta, Balikpapan, Makassar )");
+                    System.out.println(" ( Bali, Lombok, Surabaya, Yogyakarta, Balikpapan, Makassar )");
                     System.out.print("\nKota Tujuan: ");
                     String kotaTujuan = reader.readLine();
                     System.out.print("\nTanggal Berangkat: ");
@@ -147,7 +147,7 @@ public class mainClass {
                         tglKembali = reader.readLine();
                     }
 
-                    System.out.println("======== PILIH MASKAPAI ========");
+                    System.out.println("\n======== PILIH MASKAPAI ========");
                     System.out.println("1. Lion Air\n2. Citilink");
                     System.out.print("\nPilih Maskapai: ");
                     maskapai = Integer.parseInt(reader.readLine());
@@ -155,7 +155,7 @@ public class mainClass {
                         case 1:
                             LionAir lion[] = new LionAir[jmlPenumpang];
 
-                            System.out.println("======== Selamat Datang di Lion Air ========");
+                            System.out.println("\n======== Selamat Datang di Lion Air ========");
                             System.out.println("Silahkan isi data penumpang");
                             for (int i = 0; i < jmlPenumpang; i++) {
                                 System.out.print("Booking ID: ");
@@ -199,7 +199,7 @@ public class mainClass {
                         case 2:
                             Citilink citilink[] = new Citilink[jmlPenumpang];
 
-                            System.out.println("======== Selamat Datang di Citilink ========");
+                            System.out.println("\n======== Selamat Datang di Citilink ========");
                             System.out.println("Silahkan isi data penumpang");
                             for (int i = 0; i < jmlPenumpang; i++) {
                                 System.out.print("Booking ID: ");
@@ -234,7 +234,7 @@ public class mainClass {
                                 System.out.println("Tanggal Kembali: " + citilink[i].getTglKembali());
                                 System.out.println("No. Pesawat: " + citilink[i].getNoPesawat());
                                 System.out.println("No. Kursi: " + citilink[i].getNoKursi());
-                                System.out.println("Harga Tiket: " + citilink[i].getHarga() + "\n\n");
+                                System.out.println("Harga Tiket: " + citilink[i].getHarga() + "\n");
                             }
 
                             index = jmlPenumpang - 1;
