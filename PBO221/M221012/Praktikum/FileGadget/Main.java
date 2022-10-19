@@ -5,8 +5,8 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) {
-        Gadget laptop = new Laptop("32", "1024 GB", "IPS", "15.6 inch", "Snapdragon");
-        Gadget smartphone = new Smartphone("8", "512 GB", "Amoled", "6.0 inch", "Intel");
+        Gadget laptop = new Laptop("32", "1024 GB", "IPS", "15.6 inch", "Intel");
+        Gadget smartphone = new Smartphone("8", "512 GB", "Amoled", "6.0 inch", "Snapdragon");
 
         System.out.println("Laptop");
         System.out.println("RAM: " + laptop.getRam());
