@@ -1,8 +1,16 @@
 package PBO221.M221109.Tugas;
 
-public class Barang {
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Date;
+
+public class Barang implements InterfaceTransaksi {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
     String kodeBarang, namaBarang;
     int harga, stok;
+
+    Date date = new Date();
 
     public Barang() {
 
@@ -29,5 +37,29 @@ public class Barang {
 
     public int getStok() {
         return stok;
+    }
+
+    @Override
+    public void invoice() {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public int stokUpdate() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public void inputData() {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void inputPenjualan() {
+        // TODO Auto-generated method stub
+
     }
 }

@@ -1,4 +1,4 @@
-package PBO221.M221109.Tugas;
+package PBO221.M221109.TugasAbstract;
 
 import java.io.*;
 
@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        Barang alatmusik = new AlatMusik();
+        Barang barang = new DetailBarang();
 
         String namaBarang, kodeBarang, jenis;
         int stok, harga;
@@ -31,18 +31,18 @@ public class Main {
                         System.out.print("Stok Barang: ");
                         stok = Integer.parseInt(reader.readLine());
 
-                        alatmusik = new AlatMusik(kodeBarang, namaBarang, harga, stok, jenis);
+                        barang = new DetailBarang(kodeBarang, namaBarang, harga, stok, jenis);
 
-                        // alatmusik.entriData();
+                        // barang.entriData();
 
                         break;
 
                     case 2:
-                        // alatmusik.entriData();
+                        barang.entriData();
                         System.out.print("Cetak Struk? Ya/Tidak: ");
                         String konfirm = reader.readLine();
                         if (konfirm.equalsIgnoreCase("ya")) {
-                            alatmusik.invoice();
+                            barang.invoice();
                         } else {
                             System.out.println("Terima kasih telah berbelanja");
                         }
