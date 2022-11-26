@@ -3,7 +3,7 @@ package PBO221.M221109.TugasAbstract;
 import java.io.IOException;
 import java.sql.Date;
 
-public class DetailBarang extends Barang implements InterfaceA, interfaceB {
+public class DetailBarang extends Barang {
     String kategori;
     int jumlahBeli, total;
 
